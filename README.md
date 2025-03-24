@@ -89,6 +89,6 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 - **[Gradio](https://gradio.app/)** for the UI framework.
 - **[Google Gemini](https://ai.google.dev/)** for the AI model.
-
+- **[Gemini 2.0 img generation](https://ai.google.dev/gemini-api/docs/image-generation)** for the docs.
 For any issues or contributions, feel free to submit a pull request or open an issue on GitHub!
 
