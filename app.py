@@ -10,12 +10,13 @@ import mimetypes
 
 from google import genai
 from google.genai import types
+MODEL_NAME = "gemini-2.0-flash-exp-image-generation" #gemini-2.0-flash-exp
 
 def save_binary_file(file_name, data):
     with open(file_name, "wb") as f:
         f.write(data)
 
-def generate(text, file_name, api_key, model="gemini-2.0-flash-exp"):
+def generate(text, file_name, api_key, model=MODEL_NAME):
     # Initialize client using provided api_key (or fallback to env variable)
     client = genai.Client(api_key=(api_key.strip() if api_key and api_key.strip() != ""
                                      else os.environ.get("GEMINI_API_KEY")))
@@ -79,7 +80,7 @@ def process_image_and_prompt(composite_pil, prompt, gemini_api_key):
         
         file_name = composite_path  
         input_text = prompt 
-        model = "gemini-2.0-flash-exp" 
+        model = MODEL_NAME
 
         image_path, text_response = generate(text=input_text, file_name=file_name, api_key=gemini_api_key, model=model)
         
