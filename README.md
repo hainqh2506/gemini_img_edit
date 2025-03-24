@@ -2,7 +2,7 @@
 
 ## Overview
 The **Gemini Image Editing Tool** is a web-based interface that utilizes Google's Gemini API for AI-driven image generation and editing. Built using **Gradio**, this tool allows users to upload images, input prompts, and generate modified outputs using the **Gemini-2.0-flash-exp** model.
-
+![App](demo.png)
 ## Features
 - **AI-Powered Image Editing:** Modify images based on user-provided prompts.
 - **Text and Image Generation:** Depending on the API response, it can return either an edited image or a textual response.
